@@ -20,7 +20,6 @@ pipeline{
                agent {
                 docker {
                 image 'maven:latest'
-		services 'registry.hub.docker.com/library/docker:24.0.5-dind'
                 args '-v $HOME/.m2:/root/.m2'
                 }
             }
